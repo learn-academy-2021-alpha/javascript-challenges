@@ -1,12 +1,12 @@
 # Javascript Challenges
 Unit 1 JavaScript Challenges
 
-Note:
+### Note
 - Anything wrapped in < > is an indication that this will be named uniquely, the < > are NOT actually added to the command
 - $ is an indication of a command line prompt, the $ is not included
 - anything in ( ) is informational and not included in the command
 
-Naming Conventions:
+### Naming Conventions
 - Branch name: topic-student1-student2
 - File name: topic-name.js
 
