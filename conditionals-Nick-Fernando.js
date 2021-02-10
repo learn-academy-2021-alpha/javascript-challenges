@@ -55,11 +55,15 @@
 //     console.log("try again")
 // }
 
-var number1 = 10
+var number1 = "string"
 
-if(number1 % 2 === 0){
-    console.log ("this number is even")
+if(number1 % 2 === 0 && number1 === 0 ){
+    console.log ("this number is zero")
 }
 else if(number1 % 2 === 1){
+    console.log ("this number is odd")
+} else if(number1 % 2 === 0 ){
     console.log ("this number is even")
+} else {
+    console.log("try using a number")
 }
