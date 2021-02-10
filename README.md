@@ -14,42 +14,42 @@
 
 #### 1) First Driver
 - $ git clone < repo-url > (pasted from clipboard on GitHub)
-- $ cd <repo-name>
-- $ git checkout -b <topic-initial1-initial2> (ex. arrays-m-s)
-- create a new file inside the repo folder <topic-student1-student2.js> (ex. arrays-mina-sarah.js)
+- $ cd < repo-name >
+- $ git checkout -b < topic-initial1-initial2 > (ex. arrays-m-s)
+- create a new file inside the repo folder < topic-student1-student2.js > (ex. arrays-mina-sarah.js)
 - Code!
 - $ git status (this is an informational command that will help you avoid mistakes)
 - $ git add .
 - $ git commit -m "useful information here"
-- $ git push origin <your-branch-name>
+- $ git push origin < your-branch-name >
 
 
 #### 2) Second Driver
-- $ git clone <repo-url> (pasted from clipboard on GitHub)
-- $ cd <repo-name>
+- $ git clone < repo-url > (pasted from clipboard on GitHub)
+- $ cd < repo-nam e>
 - $ git fetch --all
-- $ git checkout -b <your-branch-name>
+- $ git checkout -b < your-branch-name >
 - Code!
 - $ git status (this is an informational command that will help you avoid mistakes)
 - $ git add .
 - $ git commit -m "useful information here"
-- $ git push origin <your-branch-name>
+- $ git push origin < your-branch-name >
   
   
 #### 3) Next Swap
-- $ git pull origin <your-branch-name>
+- $ git pull origin < your-branch-name >
 - Code!
 - $ git status (this is an informational command that will help you avoid mistakes)
 - $ git add .
 - $ git commit -m "useful information here"
-- $ git push origin <your-branch-name>
+- $ git push origin < your-branch-name >
 
 
 #### 4) Next Swap
 (This is the same as the previous step)
-- $ git pull origin <your-branch-name>
+- $ git pull origin < your-branch-name >
 - Code!
 - $ git status (this is an informational command that will help you avoid mistakes)
 - $ git add .
 - $ git commit -m "useful information here"
-- $ git push origin <your-branch-name>
+- $ git push origin < your-branch-name >
