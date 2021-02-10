@@ -24,23 +24,36 @@ var numbers3 = [0]
 var numbers2 = numbers3.concat(numbers)
 console.log(numbers2)
 // Consider this variable:
-//   var numSet = [2, 13, 6, 8, 4, 2]
+   var numSet = [2, 13, 6, 8, 4, 2]
 // Write the code that finds the index of the first appearance of the number 2.
+console.log(numSet.indexOf(2));
 //
 // Write the code that finds the index of the last appearance of the number 2.
+console.log(numSet.lastIndexOf(2));
 //
 // Consider this variable:
-//  var chars = ["y", "a", "r", "r", "a"]
+  var chars = ["y", "a", "r", "r", "a"]
 // Write the code that brings all the letters in the chars array together into a string.
+let charsJoined = chars.join("");
+console.log(charsJoined);
 //
 // Write the code that reverses the order of the letters in the chars array and saves it into a variable called charsReversed.
+let charsReversed = chars.reverse();
+console.log(charsReversed);
 //
 // Write the code that brings all the letters in the charsReversed array together into a string with a hyphen between each letter.
+let charsReversedJoined = charsReversed.join("-");
+console.log(charsReversedJoined);
 //
 // Write the code that brings all the letters in the charsReversed Array together into a string without separators.
+let charsReversedJoined2 = charsReversed.join("");
+console.log(charsReversedJoined2);
 //
 // Create two arrays consisting of three first names of your cohort members in each.
+var firstNames1 = ["fernando", "guerrero", "sarah"];
+var firstNames2 = ["stephanie","justinn","allen"];
 // Sort the names in alphabetical order.
+
 //
 // Sort the names in reverse alphabetical order.
 //
