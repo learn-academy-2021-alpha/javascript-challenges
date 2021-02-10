@@ -8,3 +8,5 @@ console.log(groceryList)
 var granola = "granola"
 var fullList = groceryList.concat(granola)
 console.log(fullList)
+
+// 2.
