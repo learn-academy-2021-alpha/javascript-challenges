@@ -24,3 +24,12 @@
 // var numbers2 = [0]
 // var allNumbers = numbers2.concat(numbers)
 // console.log(allNumbers)
+
+// Challenge #3
+var numSet = [2, 13, 6, 8, 4, 2]
+
+// Write the code that finds the index of the first appearance of the number 2.
+console.log( numSet.indexOf(2) )
+
+// Write the code that finds the index of the last appearance of the number 2.
+console.log( numSet.lastIndexOf(2) )
