@@ -55,10 +55,32 @@ if (randNum === 0){
 grade =Array.from(Array(101).keys())
 var randNum = grade[Math.floor(Math.random() * grade.length)]
 
-
 console.log(grade)
+console.log(randNum)
 
+if(randNum <= 65){
+    console.log("You failed")
+} else if (randNum >= 66 && randNum < 70){
+    console.log("Your grade is a D")
+} else if(randNum >= 70 && randNum < 80){
+    console.log("Your grade is a C")
+} else if(randNum >= 80 && randNum < 90){
+    console.log("Your grade is a B")
+} else if(randNum >= 90 && randNum < 100){
+    console.log("Youre grade is an A")
+} else if(randNum === 100){
+    console.log("You got a perfect score!")
+} else{
+    console.log("no grade available")
+}
 
 // Write an if/else statement that takes a variable of a boolean, number, or string datatype and logs the data type of the variable HINT: use the JS operator typeof.
+
+var anArray = [true, false, 3, 5, "shoe", "string"]
+var randElem = anArray[Math.floor(Math.random() * anArray.length)] 
+
+if(typeof(randElem) === boolean){
+    console.log("Boolean")
+}
 
 // Create a password checker using a single if/else statement. If a user inputs a password with 12 or more characters AND the password includes !, then log "That is a mighty strong password!" If the user’s password is 8 or more characters OR includes !, then log "That password is strong enough." Log "That is not a valid password." for every other input.
