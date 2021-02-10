@@ -33,7 +33,7 @@ if(trafficLight === "green"){
 // Write an if/else statement that takes two variables of numbers and outputs the larger number, or logs equal if the numbers are the same.
 //
 var numOne = 4
-var numTwo = 
+var numTwo = 5
 // Write an if/else statement that takes a variable of a number and logs whether the number is odd, even, or zero.
 //
 // STRETCH Challenges
