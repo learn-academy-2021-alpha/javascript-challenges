@@ -21,13 +21,45 @@
 // console.log ("too expensive")
 // }    
 
-var hungry = "no"
+// var hungry = "no"
 
-if( hungry === "yes"){
-    console.log("eat food")
+// if( hungry === "yes"){
+//     console.log("eat food")
+// }
+// else{
+//     console.log("keep coding")
+// }
+
+// var trafficLight = "blue"
+
+// if (trafficLight === "green"){
+//     console.log("go")
+// } else if (trafficLight === "yellow"){
+//     console.log("slow down")
+// } else if (trafficLight === "red"){
+//     console.log("stop")
+// } else{
+//     console.log("you crashed")
+// }
+
+// var num1 = 10
+// var num2 = "string"
+
+// if (num1 > num2){
+//     console.log(`${num1} is larger`)
+// } else if (num1 < num2){
+//     console.log(`${num2} is larger`)
+// } else if (num1 === num2){
+//     console.log(`${num1} and ${num2} are the same`)
+// } else {
+//     console.log("try again")
+// }
+
+var number1 = 10
+
+if(number1 % 2 === 0){
+    console.log ("this number is even")
 }
-else{
-    console.log("keep coding")
+else if(number1 % 2 === 1){
+    console.log ("this number is even")
 }
-
-
