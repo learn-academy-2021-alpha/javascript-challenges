@@ -49,3 +49,16 @@ if (randNum === 0){
 } else {
     console.log(`${randNum} is an odd number`)
 }
+
+// Write an if/else statement that takes a variable of a grade percentage and logs the letter grade for that percentage, if the grade is 100% log "perfect score", if the grade is zero log "no grade available."
+
+grade =Array.from(Array(101).keys())
+var randNum = grade[Math.floor(Math.random() * grade.length)]
+
+
+console.log(grade)
+
+
+// Write an if/else statement that takes a variable of a boolean, number, or string datatype and logs the data type of the variable HINT: use the JS operator typeof.
+
+// Create a password checker using a single if/else statement. If a user inputs a password with 12 or more characters AND the password includes !, then log "That is a mighty strong password!" If the user’s password is 8 or more characters OR includes !, then log "That password is strong enough." Log "That is not a valid password." for every other input.
