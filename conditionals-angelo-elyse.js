@@ -60,6 +60,25 @@ console.log("even");
 // STRETCH Challenges
 //
 // Write an if/else statement that takes a variable of a grade percentage and logs the letter grade for that percentage, if the grade is 100% log "perfect score", if the grade is zero log "no grade available."
+var myGrade = 87
+
+if(myGrade === 100){
+  console.log("PERFECT SCORE!");
+}else if(myGrade < 100 && myGrade > 89){
+  console.log("A");
+}else if(myGrade < 90 && myGrade > 79){
+  console.log("B");
+}else if(myGrade < 80 && myGrade > 69){
+  console.log("C");
+}else if(myGrade < 70 && myGrade > 59){
+  console.log("D");
+}else if(myGrade === 0){
+  console.log("no grade available");
+}else if(myGrade <= 59){
+  console.log("F");
+}else{
+  console.log("error");
+}
 //
 // Write an if/else statement that takes a variable of a boolean, number, or string datatype and logs the data type of the variable HINT: use the JS operator typeof.
 //
