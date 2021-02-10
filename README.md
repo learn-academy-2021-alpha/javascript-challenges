@@ -2,8 +2,8 @@
 **Unit 1 JavaScript Challenges**
 
 ### Naming Conventions
-- Branch name: topic-initial1-initial2 (ex. arrays-m-s)
-- File name: topic-student1-student2.js (ex. arrays-mina-sarah.js)
+- Branch name: `topic-initial1-initial2` (ex. arrays-m-s)
+- File name: `topic-student1-student2.js` (ex. arrays-mina-sarah.js)
 
 ### Note
 - Anything wrapped in `< >` is an indication that this will be named uniquely, the `< >` are NOT included in the command
@@ -14,6 +14,7 @@
 
 #### 1) First Driver
 - $ git clone <repo-url> (pasted from clipboard on GitHub)
+- $ cd <repo-name>
 - $ git checkout -b <topic-initial1-initial2> (ex. arrays-m-s)
 - create a new file inside the repo folder <topic-student1-student2.js> (ex. arrays-mina-sarah.js)
 - Code!
@@ -25,6 +26,7 @@
 
 #### 2) Second Driver
 - $ git clone <repo-url> (pasted from clipboard on GitHub)
+- $ cd <repo-name>
 - $ git fetch --all
 - $ git checkout -b <your-branch-name>
 - Code!
