@@ -45,3 +45,22 @@
 // console.log(charsReversed.join("-"))
 // Write the code that brings all the letters in the charsReversed Array together into a string without separators.
 // console.log(charsReversed.join(""))
+
+// 5. Create two arrays consisting of three first names of your cohort members in each.
+var array1 = ["Allen", "Junior", "Angelo"]
+var array2 = ["Justin", "Raul", "Fernando"]
+// Sort the names in alphabetical order.
+// console.log(array1) // before sort
+// console.log(array1.sort()) // after sort
+// console.log(array2) // before sort
+// console.log(array2.sort()) // after sort
+
+// Sort the names in reverse alphabetical order.
+// console.log( array1 ) // before
+// console.log( array1.sort().reverse() ) // after
+// console.log( array2 ) // before
+// console.log( array2.sort().reverse() ) // after
+// Sort all the names in alphabetical order. Hint: Combine the arrays into a single array.
+var allNames = array1.concat(array2)
+console.log( allNames ) // before
+console.log( allNames.sort() ) // after
