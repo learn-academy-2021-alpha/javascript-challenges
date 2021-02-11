@@ -27,11 +27,11 @@
 // console.log(triple(2))
 // Write a function named multiply that takes two numbers as arguments and returns the result of one of the numbers multiplied by the other.
 
-const multiply =(number1, number2) => {
-    return (number1 * number2)
-}
+// const multiply =(number1, number2) => {
+//     return (number1 * number2)
+// }
 
-console.log(multiply(2, 3))
+// console.log(multiply(2, 3))
 // Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
 
 // Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the s
