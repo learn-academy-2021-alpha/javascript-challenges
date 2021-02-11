@@ -1,13 +1,19 @@
 // Write a function named marco that returns "polo".
 // Create a function named 'marco' that takes no arguments
-const marco = () => {
-    // Return a string "polo"
-    return "polo";
-}
-console.log( marco() );
-
+// const marco = () => {
+// Return a string "polo"
+// 	return "polo";
+// };
+// console.log(marco());
 
 // Write a function named greeting that takes a name as an argument and returns "Welcome, <person's name here>!"
+
+// create a function that takes an argument
+// const greeting = (name) => {
+// then it will return a string that says "Welcome,<person's name here>!"
+// 	return `welcome, ${name}!`;
+// };
+// console.log(greeting("Raul"));
 
 // Write a function named oddOrEven that takes a number as an argument and returns whether the number is odd or even.
 
