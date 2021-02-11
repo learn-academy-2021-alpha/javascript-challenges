@@ -28,7 +28,7 @@
 - $ git clone < repo-url > (pasted from clipboard on GitHub)
 - $ cd < repo-nam e>
 - $ git fetch --all
-- $ git checkout -b < your-branch-name >
+- $ git checkout < your-branch-name >
 - Code!
 - $ git status (this is an informational command that will help you avoid mistakes)
 - $ git add .
