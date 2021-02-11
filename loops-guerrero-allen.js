@@ -54,3 +54,4 @@ var nums = [3, 57, -9, 20, 67]
 for (let i = 0; i < nums.length; i++) {
     console.log( nums[i] % 2 );
 }
+//ok i see it
