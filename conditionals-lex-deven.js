@@ -49,6 +49,16 @@
 // }
 //
 // Write an if/else statement that takes a variable of a number and logs whether the number is odd, even, or zero.
+var num3 = 0
+if(num3 === 0){
+  console.log(`${num3} is zero`);
+} else if(num3%2 === 1){
+  console.log(`${num3} is odd`);
+} else if(num3%2 === 0){
+  console.log(`${num3} is even`);
+} else {
+  console.log("something went wrong");
+}
 //
 // STRETCH Challenges
 //
