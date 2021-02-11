@@ -26,20 +26,46 @@
 // Create a loop that will log the highest number from the array. Expected output --> 67
 
 var nums = [3, 57, -9, 20, 67]
+let largest = 0
 
-for (let i=4 ; i <= nums.length ; i++){
-    if (nums[i] != 3,57,-9,20)
-    console.log(i)
-}
+for (let i = 0 ; i <= nums.length ; i++){
+    if (largest < nums[i]){
+        largest = nums[i]
+    }
+} console.log(largest)
 
 // Create a loop that will log the lowest number from the array Expected output --> -9
 
+var nums = [3, 57, -9, 20, 67]
+let smallest = 0 // or num.length?
+
+for( let i = 0; i <= nums.length; i++){
+    if(smallest > nums[i]){
+        smallest = nums[i]
+    }
+} console.log(smallest)
 
 // Create a loop that will log the remainder of each number when divided by 2. Expected output --> 1, 1, -1, 0, 1
 
+var nums = [3, 57, -9, 20, 67]
+let remainder = 0
+
+for (let i = 0; i <= nums.length-1; i++){ // added -1 to num.length because the output was giving an NaN for the 6th index which holds no value.
+    remainder = nums[i] % 2;
+    console.log(remainder)
+}
+
 
 // Looping over a string. Consider this variable:
-// var myString = "learn student"
+var myString = "learn student"
+let value = 0
+
+for (i = 0; i <= myString.length; i++){
+    if(myString[i] === "e"){
+        value = value + 1
+    }
+} console.log(value)
+
 // Write the code that will log the number of times the letter "e" occurs in the string. Expected output --> 2
 // STRETCH Challenges
 
