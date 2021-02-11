@@ -59,7 +59,7 @@
 var number = -4
 
 if(number === 0){
-  console.log("number is 0")
+  console.log("number is 0") 
 }else if(number % 2 === 1){
   console.log("odd")
 }else if(number % 2 === 0){
