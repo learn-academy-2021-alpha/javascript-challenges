@@ -16,6 +16,30 @@
 // console.log(greeting("Raul"));
 
 // Write a function named oddOrEven that takes a number as an argument and returns whether the number is odd or even.
+// Create a function called 'oddOrEven' that takes 1 argument
+const oddOrEven = (num) => {
+
+    // Conditional check of whether it is odd or even
+
+    // If it is odd
+    if (num % 2 === 1) {
+        // Return string 'odd'
+        return 'odd'
+    // Else if it is even
+    } else if (num % 2 === 0) {
+        // Return string 'even'
+        return 'even'
+    // Else
+    } else {
+        // Return 'try again'
+        return 'try again'
+    }
+}
+
+console.log( oddOrEven(1) );
+console.log( oddOrEven(2) );
+console.log( oddOrEven('tree') );
+
 
 // Write a function named triple that takes a number as an argument and returns the result of that number multiplied by 3.
 
