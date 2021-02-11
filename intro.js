@@ -63,4 +63,8 @@ console.log(5 ** 7)
 
 // Find the remainder of 33/6
 console.log(33 % 6)
+<<<<<<< HEAD
 >>>>>>> fb33cee42a22fccf4fe4e63b78ee9d8a438b0ca3
+=======
+>>>>>>> 3d56c8faa72647184185696b25112e4cfd9d6968
+>>>>>>> ff8d614ba781e2ee2fa9c4abf21b262e4397302f
