@@ -24,11 +24,26 @@
 // Expected output:
 
 // [7, 3, 5, 13]
-// Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
-// var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
-// Expected output:
 
+// Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
+var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+// Expected output:
 // "nicework"
+
+const onlyLetters = (array) => {
+    	return array.filter((value) => {
+    		return typeof value === "string" 
+    	});
+    };
+    console.log(onlyLetters(comboArr));
+
+// const onlyLetters = (array) => {
+//     return array.filter(value => {
+//         return typeof value === "letters" 
+//     })
+// }
+// console.log(onlyLetters(comboArr))
+
 // STRETCH Challenges
 // Create a function that takes in a string and returns a new string with all the vowels removed.
 //  var str = "javascript is awesome"
