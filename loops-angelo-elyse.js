@@ -25,10 +25,15 @@
 var nums = [3, 57, -9, 20, 67]
 
 // Create a loop that will log the highest number from the array. Expected output --> 67
-//
-// for(let i = 0; i < nums.length; i++){
-//   console.log();
-// }
+//c
+for(let i = 0; i < nums.length; i++){
+  let highNum;
+  if(nums[i] > nums[i+1]){
+  // if one number is greater than the next we will store into variable highestNumber
+  highNum =   
+  }
+  console.log();
+}
 
 // Create a loop that will log the lowest number from the array Expected output --> -9
 //
