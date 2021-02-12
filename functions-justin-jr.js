@@ -32,7 +32,18 @@
 // }
 
 // console.log(multiply(2, 3))
+
 // Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
 
-// Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the s
-// dffnmfkjfkf
+// we want a function named divisbleBy that will take two arguments
+// we want to input two numbers
+// we want a return where the first number is divisble by the second number
+
+const divisbleBy =(arg1,arg2) =>{
+    if (arg1%arg2 ===0) 
+    return `${arg1} is evenly divisble by ${arg2}`
+}
+
+console.log(divisbleBy(10,5))
+
+// Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
