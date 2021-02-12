@@ -16,32 +16,44 @@
 
 // Expected output --> [9, 27, 45, 12, 30]
 
-// Write a function that takes in an array and returns a new array with only odd numbers.
-// Input array is testArr2
-var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+// // Write a function that takes in an array and returns a new array with only odd numbers.
+// // Input array is testArr2
+// var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13];
 
-// Create a function that takes in 1 argument that is an array
-const oddNumbersOnly = (array) => {
-	// Create an empty array to store the odd numbers
-	let oddNumbers = [];
-	// ASSUME we iterate over the array -> for loop
-	for (let i = 0; i < array.length; i++) {
-		// We need to check if the number is odd -> if conditional
-		// If the number IS odd, we need to add it to the function's returning array
-		if (array[i] % 2 !== 0) {
-			oddNumbers.push(array[i]);
-		}
-	}
-	// Once we complete the for loop, we need to return the array with the odd numbers
-	return oddNumbers;
-}
+// // Create a function that takes in 1 argument that is an array
+// const oddNumbersOnly = (array) => {
+// 	// Create an empty array to store the odd numbers
+// 	let oddNumbers = [];
+// 	// ASSUME we iterate over the array -> for loop
+// 	for (let i = 0; i < array.length; i++) {
+// 		// We need to check if the number is odd -> if conditional
+// 		// If the number IS odd, we need to add it to the function's returning array
+// 		if (array[i] % 2 !== 0) {
+// 			oddNumbers.push(array[i]);
+// 		}
+// 	}
+// 	// Once we complete the for loop, we need to return the array with the odd numbers
+// 	return oddNumbers;
+// };
 
-// Expected output --> [-7, 3, 5, 13]
-console.log(oddNumbersOnly(testArr2));
+// // Expected output --> [-7, 3, 5, 13]
+// console.log(oddNumbersOnly(testArr2));
 
 // Write a function that takes in a string and returns a new string with every letter capitalized. HINT: you do not need arrays or loops.
-// var myMessage = "Hello There"
+var myMessage = "Hello There";
+//write a function that takes a string
 
+const wordCap = (string) => {
+	// let newString = "";
+	// for (i = 0; i < string.length; i++) {
+	// 	newString.concat(`${string[i].toUpperCase()}`);
+	// 	// console.log(string[i].toUpperCase());
+	// }
+	// return newString;
+	return string.toUpperCase();
+};
+//returns a new string with every letter capitalized.
+console.log(wordCap(myMessage));
 // Expected output --> "HELLO THERE"
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method
