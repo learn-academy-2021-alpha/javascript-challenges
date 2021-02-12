@@ -36,3 +36,4 @@ const letters = (array) => {
     return str.join("")
 }
 console.log(letters(comboArr))
+
