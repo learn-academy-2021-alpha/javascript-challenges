@@ -39,11 +39,28 @@
 // Expected output:
 
 // "nicework"
+
+// const onlyLetters = (array) => {
+//   return array.filter(value => {
+//     return typeof value === "string"
+//   })
+// }
+// console.log(onlyLetters(comboArr))
 // STRETCH Challenges
 // Create a function that takes in a string and returns a new string with all the vowels removed.
-//  var str = "javascript is awesome" 
+ var str = "javascript is awesome" 
 // Expected output:
 
+const noVowels = (string) => {
+  let stringArr = string.split("") 
+  let newWord = stringArr.filter(value => {
+    return value !== "a" && value !== "e" && value !== "i" && value !== "o"
+    
+  })
+  return newWord.join("")
+}
+
+console.log(noVowels(str))
 // "jvscrpt s wsm"
 // Create a function that takes in two arrays as arguments returns one array with no duplicate values.
 // var arr1 = [3, 7, 10, 5, 4, 3]
