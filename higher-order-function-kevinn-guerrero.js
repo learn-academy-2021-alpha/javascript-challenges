@@ -23,8 +23,13 @@
 
 // Write a function that takes in an array and returns a new array with only odd numbers
 // var arr2 = [2, 7, 3, 5, 8, 10, 13]
-// Expected output:
-
+// // Expected output:
+// const onlyOdds = (array) => {
+//    return array.filter(value => {
+//         return value % 2 !==0
+//     })
+// }
+// console.log(onlyOdds(arr2))
 // [7, 3, 5, 13]
 
 
