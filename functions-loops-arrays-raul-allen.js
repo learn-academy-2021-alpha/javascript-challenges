@@ -40,26 +40,39 @@
 // console.log(oddNumbersOnly(testArr2));
 
 // Write a function that takes in a string and returns a new string with every letter capitalized. HINT: you do not need arrays or loops.
-var myMessage = "Hello There";
-//write a function that takes a string
+// var myMessage = "Hello There";
+// //write a function that takes a string
 
-const wordCap = (string) => {
-	// let newString = "";
-	// for (i = 0; i < string.length; i++) {
-	// 	newString.concat(`${string[i].toUpperCase()}`);
-	// 	// console.log(string[i].toUpperCase());
-	// }
-	// return newString;
-	return string.toUpperCase();
-};
-//returns a new string with every letter capitalized.
-console.log(wordCap(myMessage));
+// const wordCap = (string) => {
+// 	return string.toUpperCase();
+// };
+// //returns a new string with every letter capitalized.
+// console.log(wordCap(myMessage));
 // Expected output --> "HELLO THERE"
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method
-// var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+
+// Create a function that takes 1 argument that is an array
+const findLetters = (array) => {
+	// Create a variable to store the letters
+	let letters = [];
+	// We will iterate through the array with a for loop
+	for (let i = 0; i < array.length; i++) {
+		// We will need to check IF the element is a letter
+		if (typeof array[i] === "string") {
+			// If it is a letter, add it to the variable storing the letters
+			letters.push(array[i]);
+		}
+	}
+	// At this point, we will have an array 'letters' with all the letters
+	
+	// Return the letters as a string
+	return letters.join("");
+}
 
 // Expected output --> "nicework"
+console.log(findLetters(comboArr));
 
 // Create a function that returns the highest number
 // var highestNumber = [1, 45, 4, 2, 7, 67, -9, 0, 6]
