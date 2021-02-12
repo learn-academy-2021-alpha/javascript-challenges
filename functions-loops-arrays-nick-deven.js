@@ -40,23 +40,39 @@
 // Expected output --> [-7, 3, 5, 13]
 
 // Write a function that takes in a string and returns a new string with every letter capitalized. HINT: you do not need arrays or loops.
-var myMessage = "Hello There"
+// var myMessage = "Hello There"
 
-// create a function that takes a string
-// returns a new string with every letter capitalized
-// input = "Hello There"
-// output = "HELLO THERE"
+// // create a function that takes a string
+// // returns a new string with every letter capitalized
+// // input = "Hello There"
+// // output = "HELLO THERE"
 
-const capString = (string) =>{
-    return (string.toUpperCase())
-}
+// const capString = (string) =>{
+//     return (string.toUpperCase())
+// }
 
-console.log(capString(myMessage))
+// console.log(capString(myMessage))
 
 // Expected output --> "HELLO THERE"
 
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method
-// var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+
+//create a function that takes in an array of numbers and letters 
+//returns a string with only letters
+//input - [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+//output - "nicework"
+
+const onlyLetters = (array) => {
+    let letters = []
+    for (let i=0; i<array.length; i++){
+        if (typeof array[i] === "string"){
+            letters.push(array[i])
+        }
+    }
+    return letters.join("")
+}
+console.log(onlyLetters(comboArr))
 
 // Expected output --> "nicework"
 
