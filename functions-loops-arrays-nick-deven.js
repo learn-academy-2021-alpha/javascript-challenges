@@ -1,29 +1,57 @@
-// Write a function that takes in an array and returns a new array with all numbers multiplied by 3.
-var testArr1 = [3, 9, 15, 4, 10]
+// // Write a function that takes in an array and returns a new array with all numbers multiplied by 3.
+// var testArr1 = [3, 9, 15, 4, 10]
 
-    //create a function that takes an array of numbers
-    //returns an array with all the numbers multiplied by 3
-    //input - var testArr1 = [3, 9, 15, 4, 10] 
-    // output - [9, 27, 45, 12, 30]
+//     //create a function that takes an array of numbers
+//     //returns an array with all the numbers multiplied by 3
+//     //input - var testArr1 = [3, 9, 15, 4, 10] 
+//     // output - [9, 27, 45, 12, 30]
 
-const trippleArray = (array) => {
-    let storedTripple = []
-    for(let i=0; i<array.length; i++){
-        storedTripple.push(array[i] * 3)
-    }
-    return storedTripple
-}
-console.log(trippleArray(testArr1))
+// const trippleArray = (array) => {
+//     let storedTripple = []
+//     for(let i=0; i<array.length; i++){
+//         storedTripple.push(array[i] * 3)
+//     }
+//     return storedTripple
+// }
+// console.log(trippleArray(testArr1))
 
-// Expected output --> [9, 27, 45, 12, 30]
+// // Expected output --> [9, 27, 45, 12, 30]
 
-// Write a function that takes in an array and returns a new array with only odd numbers.
+// // Write a function that takes in an array and returns a new array with only odd numbers.
 // var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+
+// // create a function that takes in an array of numbers
+// // return new array with only odd numbers
+// // input = testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+// // output = [-7, 3, 5, 13]
+
+// const onlyOdd = (array) => {
+//     let oddNumbers = []
+//     for(let i=0;i<array.length; i++){
+//         if(array[i]%2 !== 0){
+//             oddNumbers.push(array[i])
+//         }
+//     }
+//     return oddNumbers
+// }
+
+// console.log(onlyOdd(testArr2))
 
 // Expected output --> [-7, 3, 5, 13]
 
 // Write a function that takes in a string and returns a new string with every letter capitalized. HINT: you do not need arrays or loops.
-// var myMessage = "Hello There"
+var myMessage = "Hello There"
+
+// create a function that takes a string
+// returns a new string with every letter capitalized
+// input = "Hello There"
+// output = "HELLO THERE"
+
+const capString = (string) =>{
+    return (string.toUpperCase())
+}
+
+console.log(capString(myMessage))
 
 // Expected output --> "HELLO THERE"
 
