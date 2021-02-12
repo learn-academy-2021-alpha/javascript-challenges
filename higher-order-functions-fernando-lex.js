@@ -34,24 +34,44 @@
 
 // Expected output: [7, 3, 5, 13]
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
- var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+//  var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 
-//write function that takes mixed array as argument
-//returns string with only letters
-//use .filter and typeof to sort out the letters
-// use .join to merge new array into a string
+// //write function that takes mixed array as argument
+// //returns string with only letters
+// //use .filter and typeof to sort out the letters
+// // use .join to merge new array into a string
 
-const stringLetters = (array) => {
-  return array.filter(value => {
-    return typeof value === "string"
-  }).join("")
-}
-console.log(stringLetters(comboArr));
-// Expected output: "nicework"
+// const stringLetters = (array) => {
+//   return array.filter(value => {
+//     return typeof value === "string"
+//   }).join("")
+// }
+// console.log(stringLetters(comboArr));
+// // Expected output: "nicework"
 
 // STRETCH Challenges
 // Create a function that takes in a string and returns a new string with all the vowels removed.
-//  var str = "javascript is awesome"
+//write a function that take in a string as an argument 
+//returns new string with vowels
+//split sting intp array with .split
+//.filter new array removing all vowels 
+//  retruning new string with .join  new array with vowels removed
+
+
+
+
+var str = "javascript is awesome"
+
+const noVowels = (array) => {
+  let splitArray = array.split("")
+  return splitArray.filter (value =>{
+    return value !== "a" && value !== "e" && value !== "i" && value !== "o" && value !==  "u"
+  }).join("")
+} 
+console.log(noVowels(str));
+
+
+
 // Expected output:
 //
 // "jvscrpt s wsm"
