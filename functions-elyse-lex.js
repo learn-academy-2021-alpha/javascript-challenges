@@ -72,9 +72,45 @@ const multiply = (numOne,numTwo) => {
 console.log(multiply(2,4));
 
 // Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
+
+const divisibleBy = (numThree, numFour) => {
+  if(numThree%numFour === 0){
+   return (`${numThree} is evenly divisible by ${numFour}`);
+  }
+}
+console.log(divisibleBy(15, 5));
 //
 // Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
-//
+
+const assignGrade = (grade) => {
+  if(grade === 100){
+    "perfect score"
+  } else if(grade >= 93 && grade < 100){
+    return "A"
+  }else if(grade >= 90 && grade < 93){
+    return "A-"
+  }else if(grade >= 87 && grade < 90){
+    return "B+"
+  }else if(grade >= 83 && grade < 87){
+    return "B"
+  }else if(grade >= 80 && grade < 83){
+    return "B-"
+  }else if(grade >= 76 && grade < 80){
+    return "C+"
+  }else if(grade >= 73 && grade < 76){
+    return "C"
+  }else if(grade >= 70 && grade < 73){
+    return "C-"
+  }else if(grade >= 60 && grade < 70){
+    return "D"
+  }else if(grade > 0 && grade < 67){
+    return "F"
+  }else if(grade === 0){
+    return "no grade available"
+  }
+}
+console.log(assignGrade(55));
+
 // STRETCH Challenges
 // Test your functions with multiple calls
 //

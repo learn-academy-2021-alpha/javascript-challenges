@@ -71,10 +71,10 @@
 const niceWork = (array) => {
   let letters = []
   for (let i = 0; i<array.length;i++){
-    if(typeof str === array[i]){
+    if(typeof array[i] === `string`){
       letters.push(array[i])
     }
-  } return letters
+  } return letters.join("")
 }
 console.log(niceWork(comboArr));
 

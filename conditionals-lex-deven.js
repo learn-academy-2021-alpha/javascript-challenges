@@ -63,7 +63,53 @@ if(num3 === 0){
 // STRETCH Challenges
 //
 // Write an if/else statement that takes a variable of a grade percentage and logs the letter grade for that percentage, if the grade is 100% log "perfect score", if the grade is zero log "no grade available."
+
+var grade = 0
+
+if(grade === 100){
+  console.log("perfect score");
+} else if(grade >= 93 && grade < 100){
+  console.log("A")
+}else if(grade >= 90 && grade < 93){
+  console.log("A-")
+}else if(grade >= 87 && grade < 90){
+  console.log("B+")
+}else if(grade >= 83 && grade < 87){
+  console.log("B")
+}else if(grade >= 80 && grade < 83){
+  console.log("B-")
+}else if(grade >= 76 && grade < 80){
+  console.log("C+")
+}else if(grade >= 73 && grade < 76){
+  console.log("C")
+}else if(grade >= 70 && grade < 73){
+  console.log("C-")
+}else if(grade >= 60 && grade < 70){
+  console.log("D")
+}else if(grade > 0 && grade < 67){
+  console.log("F")
+}else if(grade === 0){
+  console.log("no grade available")
+}
 //
 // Write an if/else statement that takes a variable of a boolean, number, or string datatype and logs the data type of the variable HINT: use the JS operator typeof.
-//
+
+var randomData = true
+if(typeof randomData === `string`){
+  console.log("string");
+}if(typeof randomData === `boolean`){
+  console.log("boolean");
+}if(typeof randomData === `number`){
+  console.log("number");
+}
+
 // Create a password checker using a single if/else statement. If a user inputs a password with 12 or more characters AND the password includes !, then log "That is a mighty strong password!" If the user’s password is 8 or more characters OR includes !, then log "That password is strong enough." Log "That is not a valid password." for every other input.
+
+var password = "!!!!!!!!!!!!"
+if(password.length >= 12 && password.includes("!")){
+  console.log("That is a mighty strong password!");
+} else if(password.length >= 8 || password.includes("!")){
+  console.log("That password is strong enough.");
+} else{
+  console.log("That is not a valid password.");
+}
