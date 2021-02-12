@@ -44,23 +44,40 @@
 // Expected output --> [-7, 3, 5, 13]
 //
 // Write a function that takes in a string and returns a new string with every letter capitalized. HINT: you do not need arrays or loops.
-var myMessage = "Hello There"
+// var myMessage = "Hello There"
+// //
+// //Create a function with a string
+// //Use string as an arguement
+// //return variable with .toUpperCase on arguement
+// //log function
 //
-//Create a function with a string
-//Use string as an arguement
-//return variable with .toUpperCase on arguement
-//log function
-
-const upperCase = (string) =>{
-  return string.toUpperCase()
-}
-console.log(upperCase(myMessage))
+// const upperCase = (string) =>{
+//   return string.toUpperCase()
+// }
+// console.log(upperCase(myMessage))
 
 // Expected output --> "HELLO THERE"
 //
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: use the typeof method
-// var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
-//
+ var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
+
+//create a function with an array as an argument
+//create a array inside function to hold the new string
+//create a for loop with an if statement that returns all letters using typeof
+//push letters into new array
+//using .join merge array into single string
+//console.log(function);
+
+const niceWork = (array) => {
+  let letters = []
+  for (let i = 0; i<array.length;i++){
+    if(typeof str === array[i]){
+      letters.push(array[i])
+    }
+  } return letters
+}
+console.log(niceWork(comboArr));
+
 // Expected output --> "nicework"
 //
 // Create a function that returns the highest number
