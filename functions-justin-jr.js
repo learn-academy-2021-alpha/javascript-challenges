@@ -39,11 +39,31 @@
 // we want to input two numbers
 // we want a return where the first number is divisble by the second number
 
-const divisbleBy =(arg1,arg2) =>{
-    if (arg1%arg2 ===0) 
-    return `${arg1} is evenly divisble by ${arg2}`
-}
+// const divisbleBy =(arg1,arg2) =>{
+//     if (arg1%arg2 ===0) 
+//     return `${arg1} is evenly divisble by ${arg2}`
+// }
 
-console.log(divisbleBy(10,5))
+// console.log(divisbleBy(10,5))
 
 // Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
+
+// write a function named assignedGrade that will take one argument
+const assignGrade = (result) => {
+    if (result <60){
+        return"You Failed"
+} else if (result >= 60 && result < 70) {
+    return "you got a D"
+} else if (result >= 70 && result < 80){
+    return " you got a C"
+} else if (result >=  80 && result < 90){
+    return "you got a B"
+} else if (result >= 90) {
+    return "you got an A"
+}
+}
+
+console.log(assignGrade(98))
+// when we input a number
+// it will return a letter grade
+
