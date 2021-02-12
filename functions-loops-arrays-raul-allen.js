@@ -44,12 +44,6 @@ var myMessage = "Hello There";
 //write a function that takes a string
 
 const wordCap = (string) => {
-	// let newString = "";
-	// for (i = 0; i < string.length; i++) {
-	// 	newString.concat(`${string[i].toUpperCase()}`);
-	// 	// console.log(string[i].toUpperCase());
-	// }
-	// return newString;
 	return string.toUpperCase();
 };
 //returns a new string with every letter capitalized.
