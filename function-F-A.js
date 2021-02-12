@@ -49,4 +49,43 @@
 // console.log(multiply(5 , 5));
 // Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
 
+//set up a function that takes 2 number and retruns devision answer
+
+// const divisibleBy =(num1 , num2) =>{
+//     if (num1 % num2 === 0)
+//     return `${num1} is evently divisible by ${num2}`
+//     else if (num1 % num2 !== 0)
+//     return `${num1} is not evently divisible by ${num2}`
+//     else 
+//   return "try again"
+//     }
+
+
+// console.log(divisibleBy(3422342349781234 , 28234))
+
+
 // Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
+
+//set upfunction that that uses a number score retruns a letter grade. 
+//if statement to scale grade values
+//log final grade
+
+
+const assignGrade = (score) =>{
+    if (score >= 90)
+    return "You got an A"
+    else if (score >= 80)
+    return "You got an B"
+    else if (score >= 70)
+    return "You got an C"
+    else if (score >= 60)
+    return "You got an D"
+    else if (score <= 50)
+    return "You got an F"
+    else
+    "try again"
+}
+
+console.log(assignGrade(45))
+
+
