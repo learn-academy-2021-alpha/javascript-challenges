@@ -1,25 +1,43 @@
 // DON'T FORGET TO PSEUDO CODE
 
 // Write a function that takes in an array and returns a new array with all numbers multiplied by 3.
-var testArr1 = [3, 9, 15, 4, 10];
+// var testArr1 = [3, 9, 15, 4, 10];
 
 //create a function that takes an array
-const multiplier = (array) => {
-	let storageArray = [];
-	for (let i = 0; i < array.length; i++) {
-		storageArray.push(array[i] * 3);
-	}
-	return storageArray;
-};
-console.log(multiplier(testArr1));
+// const multiplier = (array) => {
+// 	let storageArray = [];
+// 	for (let i = 0; i < array.length; i++) {
+// 		storageArray.push(array[i] * 3);
+// 	}
+// 	return storageArray;
+// };
+// console.log(multiplier(testArr1));
 //returns an array with all numbers multiplied by 3
 
 // Expected output --> [9, 27, 45, 12, 30]
 
 // Write a function that takes in an array and returns a new array with only odd numbers.
-// var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+// Input array is testArr2
+var testArr2 = [0, 2, -7, 3, 5, 8, 10, 13]
+
+// Create a function that takes in 1 argument that is an array
+const oddNumbersOnly = (array) => {
+	// Create an empty array to store the odd numbers
+	let oddNumbers = [];
+	// ASSUME we iterate over the array -> for loop
+	for (let i = 0; i < array.length; i++) {
+		// We need to check if the number is odd -> if conditional
+		// If the number IS odd, we need to add it to the function's returning array
+		if (array[i] % 2 !== 0) {
+			oddNumbers.push(array[i]);
+		}
+	}
+	// Once we complete the for loop, we need to return the array with the odd numbers
+	return oddNumbers;
+}
 
 // Expected output --> [-7, 3, 5, 13]
+console.log(oddNumbersOnly(testArr2));
 
 // Write a function that takes in a string and returns a new string with every letter capitalized. HINT: you do not need arrays or loops.
 // var myMessage = "Hello There"
