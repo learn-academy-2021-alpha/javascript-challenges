@@ -67,3 +67,21 @@ const inBudget = (number) => {
         return 'not in budget'
     }
 }
+
+// Write the test for a function that takes in two arguments(numbers) and returns the smaller number.
+test("returns the number 1 when comparing numbers 1 and 2", () => {
+  expect(largerNum(1,2)).toEqual(1)
+
+})
+//function taking two arguments and returning lowest number
+const largerNum = (numOne, numTwo) => {
+  if (numOne > numTwo) {
+    return numTwo
+  }
+  else if (numOne < numTwo) {
+    return numOne
+
+  } else if (numOne === numTwo) {
+    return numOne
+  }
+}
