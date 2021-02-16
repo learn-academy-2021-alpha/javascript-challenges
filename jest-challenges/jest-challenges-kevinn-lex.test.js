@@ -151,8 +151,114 @@ const compareNum = (numOne,numTwo) => {
 // Write the function that will make the test pass.
 // 5. Write the test for a function that takes in one argument(number) and returns whether the number is odd.
 
+describe("when oddOrEven is called", () => {
+  it("return 'odd' if number is odd", () => {
+    //Arrange
+    const number = 5 
+
+    //Act
+    const actualResult = oddOrEven(number)
+
+    //Assert
+    expect(actualResult).toEqual("odd")
+  })
+
+  it("return 'even' if number is odd", () => {
+    //Arrange
+    const number = 6 
+
+    //Act
+    const actualResult = oddOrEven(number)
+
+    //Assert
+    expect(actualResult).toEqual("even")
+  })
+
+  it("return 'error' if argument is not a number", () => {
+    //Arrange
+    const number = 'string' 
+
+    //Act
+    const actualResult = oddOrEven(number)
+
+    //Assert
+    expect(actualResult).toEqual("error")
+  })
+})
+
+const oddOrEven = (number) => {
+  if(typeof number !== 'number'){
+    return 'error'
+  } else {
+    if(number % 2 !== 0) {
+      return "odd"
+    } else if(number % 2 === 0){
+      return "even"
+    } else {
+      return "error"
+    }
+  }
+}
+
 // Write the function that will make the test pass.
 // 6. Write the test for a function that takes in a fruit and returns "yellow" if the argument is banana, "red" if apple and "purple" if grape.
+
+describe("when fruitColor is called",() => {
+  it("return 'yellow' when 'banana' is called", () => {
+    //Arrange
+    const fruit = "banana"
+
+    //Act
+    const actualResult = fruitColor(fruit)
+
+    //Assert
+    expect(actualResult).toEqual("yellow")
+  })
+
+  it("return 'red' when 'apple' is called", () => {
+    //Arrange
+    const fruit = "apple"
+
+    //Act
+    const actualResult = fruitColor(fruit)
+
+    //Assert
+    expect(actualResult).toEqual("red")
+  })
+
+  it("return 'purple' when 'grape' is called", () => {
+    //Arrange
+    const fruit = "grape"
+
+    //Act
+    const actualResult = fruitColor(fruit)
+
+    //Assert
+    expect(actualResult).toEqual("purple")
+  })
+  it("return 'error' when the argument is not a fruit on the list", () => {
+    //Arrange
+    const fruit = "orange"
+
+    //Act
+    const actualResult = fruitColor(fruit)
+
+    //Assert
+    expect(actualResult).toEqual("error")
+  })
+})
+
+const fruitColor = (fruit) => {
+  if(fruit === "banana"){
+    return "yellow"
+  }else if(fruit === "apple") {
+    return "red"
+  }else if(fruit === "grape") {
+    return "purple"
+  }else {
+    return "error"
+  }
+} 
 
 // Write the function that will make the test pass.
 // 7. Write the test for a function called rick that returns "Morty".
