@@ -48,7 +48,27 @@
 
 // 3. Write the test for a function that returns "in budget" if a price is lower than $300.
 
+test("when inBudget is called with a number that is less than 300", () => {
+  //Arrange
+  const number = i
+  //Act
+  const numResult = i < 300
+  //Assert
+  expect (numResult).toEqual ("in budget")
+})
+
 // Write the function that will make the test pass.
+
+
+//
+const inBudget = () => {
+  let number = i
+  if (number < 300) {
+    return "in budget"
+  }
+}
+
+
 // 4. Write the test for a function that takes in two arguments(numbers) and returns the smaller number.
 
 // Write the function that will make the test pass.
