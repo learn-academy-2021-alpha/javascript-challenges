@@ -33,7 +33,7 @@ const areTired = (string) => {
 // Write the function that will make the test pass.
 // 2. Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
 
-fdescribe("when areStressed is called", () => {
+describe("when areStressed is called", () => {
   it("returns 'relax' when yes is called", () => {
     //Arrange
     const stringAr = "yes"
@@ -68,8 +68,85 @@ const areStressed = (string) => {
 // Write the function that will make the test pass.
 // 3. Write the test for a function that returns "in budget" if a price is lower than $300.
 
+describe("When budgetCheck is called", () => {
+  it("return `in budget` when a number under $300 is called", () => {
+    //Arrange
+    const number = 150
+
+    //Act
+    const actualResult = budgetCheck(number)
+
+    //Assert
+    expect(actualResult).toEqual("in budget")
+  })
+  it("return `over budget` when a number $300 or over is called", () => {
+    //Arrange
+    const number = 301
+
+    //Act
+    const actualResult = budgetCheck(number)
+
+    //Assert
+    expect(actualResult).toEqual("over budget")
+  })
+})
+
+const budgetCheck = (number) => {
+  if(number<300){
+    return "in budget"
+  } else if(number>=300){
+    return "over budget"
+  }
+}
+
 // Write the function that will make the test pass.
 // 4. Write the test for a function that takes in two arguments(numbers) and returns the smaller number.
+
+describe("When compareNum is called", () =>{
+  it("return numOne when numOne is smaller than numTwo", () => {
+    //Arrange
+    const number1 = 2
+    const number2 = 3
+
+    //Act
+    const actualResult = compareNum(number1, number2)
+
+    //Assert
+    expect(actualResult).toEqual(number1)
+  })
+  it("return numTwo when numTwo is smaller than numOne", () => {
+    //Arrange
+    const number1 = 3
+    const number2 = 2
+
+    //Act
+    const actualResult = compareNum(number1, number2)
+
+    //Assert
+    expect(actualResult).toEqual(number2)
+  })
+  it("return `error` when numOne is equal to numTwo", () => {
+    //Arrange
+    const number1 = 3
+    const number2 = 3
+
+    //Act
+    const actualResult = compareNum(number1, number2)
+
+    //Assert
+    expect(actualResult).toEqual("error")
+  })
+})
+
+const compareNum = (numOne,numTwo) => {
+  if(numOne<numTwo){
+    return numOne
+  } else if(numOne>numTwo){
+    return numTwo
+  } else{
+    return "error"
+  }
+}
 
 // Write the function that will make the test pass.
 // 5. Write the test for a function that takes in one argument(number) and returns whether the number is odd.
