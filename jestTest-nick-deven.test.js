@@ -2,7 +2,7 @@
 
 // IMPORTANT: You do not need to comment out the old tests or functions. The purpose of tests are to be AUTOMATED. Commenting them out defeats that purpose.
 
-// 1. Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired.
+// 1. Write the test for a function that returns "drink coffee" if you are tired and "keep going" if you are not tired.
 
 describe("When areYouTired is called", () => {
     it("return 'drink coffee' when called with yes", () => {
@@ -13,9 +13,9 @@ describe("When areYouTired is called", () => {
     const actualTired = areYouTired(argument);
 
     //Assert
-    expect(actualResult).toEqual("drink coffee");
+    expect(actualTired).toEqual("drink coffee");
     })
-    it("return 'keep working' when called with no", () => {
+    it("return 'keep going' when called with no", () => {
         //Arrange 
         const argument = "no";
     
@@ -23,25 +23,61 @@ describe("When areYouTired is called", () => {
         const actualTired = areYouTired(argument);
     
         //Assert
-        expect(actualResult).toEqual("keep working");
+        expect(actualTired).toEqual("keep going");
         })
 })
 
 //create a function called areYouTired
 //takes in string as an argument
 
-const areYouTired = (actualTired) => {
+const areYouTired = (str) => {
     // if argument is yes return "drink coffee"
-    if actualTired === 'yes' {
+    if (str === 'yes') {
         return "drink coffee"
-        //else return "keep working"
+        //else return "keep going"
     } else {
-        return "keep working"
+        return "keep going"
     }
 }
 
 // Write the function that will make the test pass.
 // 2. Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
+
+ fdescribe("When areYouStressed is called", () => {
+    it("return 'relax' when called with yes", () => {
+    //Arrange 
+    const argument = "yes";
+
+    //Act
+    const actualStress = areYouStressed(argument);
+
+    //Assert
+    expect(actualStress).toEqual("relax");
+    })
+    it("return 'keep going' when called with no", () => {
+        //Arrange 
+        const argument = "no";
+    
+        //Act
+        const actualStress = areYouStressed(argument);
+    
+        //Assert
+        expect(actualStress).toEqual("keep going");
+        })
+})
+
+//create a function called areYouStressed
+//takes in string as an argument
+const areYouStressed = (str) => {
+    // if argument is yes return "relax"
+    if (str === 'yes') {
+        return "relax"
+        //else return "keep going"
+    } else {
+        return "keep going"
+    }
+}
+
 
 // Write the function that will make the test pass.
 // 3. Write the test for a function that returns "in budget" if a price is lower than $300.
