@@ -41,34 +41,34 @@ const areYouTired = (str) => {
 }
 
 // Write the function that will make the test pass.
-// 2. Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
+// 2. Write the test for a function that returns "relax" if you arelResulted and "keep going" if you are notlResulted.
 
- fdescribe("When areYouStressed is called", () => {
+ describe("When areYolResulted is called", () => {
     it("return 'relax' when called with yes", () => {
     //Arrange 
     const argument = "yes";
 
     //Act
-    const actualStress = areYouStressed(argument);
+    const actualResult = areYolResulted(argument);
 
     //Assert
-    expect(actualStress).toEqual("relax");
+    expect(actualResult).toEqual("relax");
     })
     it("return 'keep going' when called with no", () => {
         //Arrange 
         const argument = "no";
     
         //Act
-        const actualStress = areYouStressed(argument);
+        const actualResult = areYolResulted(argument);
     
         //Assert
-        expect(actualStress).toEqual("keep going");
+        expect(actualResult).toEqual("keep going");
         })
 })
 
-//create a function called areYouStressed
+//create a function called areYolResulted
 //takes in string as an argument
-const areYouStressed = (str) => {
+const areYolResulted = (str) => {
     // if argument is yes return "relax"
     if (str === 'yes') {
         return "relax"
@@ -81,6 +81,43 @@ const areYouStressed = (str) => {
 
 // Write the function that will make the test pass.
 // 3. Write the test for a function that returns "in budget" if a price is lower than $300.
+
+fdescribe("When inBudget is called", () => {
+    it("return 'in budget' when called with a number less than 300", () => {
+        //Arrange 
+        const argument = 32;
+
+        //Act
+        const actualResult = inBudget (argument);
+
+        //Assert
+        expect(actualResult).toEqual("in budget");
+    })
+    it("return 'too expensive' when called with a number greater than or equal to 300", () => {
+        //Arrange 
+        const argument = 305;
+    
+        //Act
+        const actualResult = inBudget(argument);
+    
+        //Assert
+        expect(actualResult).toEqual("too expensive");
+    })
+})
+
+//write a function thats called inBudget
+//takes in a number as an argument 
+const inBudget = (numb) => {
+    //if number is below 300 return "in budget"
+    if (numb < 300) {
+        return "in budget"
+    //else return "too expensive"
+    } else if (numb >= 300) {
+        return "too expensive"
+    }
+}
+// console.log(inBudget(32))
+
 
 // Write the function that will make the test pass.
 // 4. Write the test for a function that takes in two arguments(numbers) and returns the smaller number.
