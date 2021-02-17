@@ -16,31 +16,41 @@
 // }
 // console.log(person.birthPlace())
 
-// Consider this variable:
-var product = {
-  name: "chair", price: 14.99
-}
-var product2 = {
-  name: "table", price: 149.99
-}
-// Write a function called describeProduct takes product as an argument and logs "The product is a chair. It costs $14.99".
-// Create a function that takes in 1 argument that is an object
-const describeProduct = (object) => {
-  // Return a string with 'The product is a [name of product]'
-  return `The product is a ${object.name}`
-}
-// Console.log the result
-console.log(describeProduct(product2));
+// // Consider this variable:
+// var product = {
+//   name: "chair", price: 14.99
+// }
+// var product2 = {
+//   name: "table", price: 149.99
+// }
+// // Write a function called describeProduct takes product as an argument and logs "The product is a chair. It costs $14.99".
+// // Create a function that takes in 1 argument that is an object
+// const describeProduct = (object) => {
+//   // Return a string with 'The product is a [name of product]'
+//   return `The product is a ${object.name}`
+// }
+// // Console.log the result
+// console.log(describeProduct(product2));
 
 // Consider this variable:
-// var lunch = {
-//   name: "PB and Banana",
-//   type: "sandwich",
-//   ingredients: ["bread", "peanut butter", "banana"]
-// }
+var lunch = {
+  name: "PB and Banana",
+  type: "sandwich",
+  ingredients: ["bread", "peanut butter", "banana"]
+}
 // Write the code that accesses the ingredients property.
+console.log(lunch.ingredients)
 // Write the code that access the 3rd ingredient of the lunch object.
+console.log(lunch.ingredients[2])
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+
+//write a function that takes in an object at an argument
+const instructions = (object) => {
+  //return a string
+  return `The ingredients for a ${object.name} and ${object.type} are ${object.ingredients[0]}, ${object.ingredients[1]}, and ${object.ingredients[2]}.`
+}
+console.log(instructions(lunch));
+
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 // Consider this variable:
 // var animals = [
