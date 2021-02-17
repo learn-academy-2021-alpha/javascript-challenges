@@ -71,22 +71,22 @@
 
 
 // 4. Write the test for a function that takes in two arguments(numbers) and returns the smaller number.
-
-test ( "when compareNum is called will take num1 and compare to num2", (a,b) => {
-  const greaterValue = (a<b)
-  expect(greaterValue).toEqual(a)
-})
-
-// Write the function that will make the test pass.
-
-var smallNum = 3
-var bigNum = 5
-
-const compareNum = (a,b) =>{
-  if ( smallNum< bigNum){
-    return compareNum
-  }
-}
+//
+// test ( "when compareNum is called will take num1 and compare to num2", (a,b) => {
+//   const greaterValue = (a<b)
+//   expect(greaterValue).toEqual(a)
+// })
+//
+// // Write the function that will make the test pass.
+//
+// var smallNum = 3
+// var bigNum = 5
+//
+// const compareNum = (a,b) =>{
+//   if ( smallNum< bigNum){
+//     return compareNum
+//   }
+// }
 
 
 // 5. Write the test for a function that takes in one argument(number) and returns whether the number is odd.
@@ -111,10 +111,20 @@ const compareNum = (a,b) =>{
 
 // 7. Write the test for a function called rick that returns "Morty".
 
-// Write the function that will make the test pass.
+// test ("when rick is called return 'Morty'", () => {
+//   expect(rick()).toEqual("Morty")
+// })
+//
+// // Write the function that will make the test pass.
+//
+// const rick = () => {
+//   return "Morty"
+// }
 
 
 // 8. Write the test for a function called greeter that takes a name as an argument and returns a greeting with that name to the screen.
+
+
 
 // Write the function that will make the test pass.
 // 9. Write the test for a function called oddOrEven that takes an number as an argument and logs whether the number is odd or even.
@@ -122,7 +132,18 @@ const compareNum = (a,b) =>{
 // Write the function that will make the test pass.
 // 10. Write the test for a function called doubler that takes an number and returns the result of the number multiplied by 2.
 
+test ("when doubler is called return number multiplied by 2", () => {
+  expect(doubler()).toEqual(doubTester * 2)
+})
+
 // Write the function that will make the test pass.
+
+var doubTester = 4
+
+const doubler = () => {
+  return doubTester * 2
+}
+
 // 11. Write the test for a function called multiply that takes two numbers as arguments and logs the result of one of the numbers multiplied by the other.
 
 // Write the function that will make the test pass.
