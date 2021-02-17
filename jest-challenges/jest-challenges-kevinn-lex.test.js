@@ -308,8 +308,59 @@ const greeter = (name) => {
 // Write the function that will make the test pass.
 // 9. Write the test for a function called oddOrEven that takes an number as an argument and logs whether the number is odd or even.
 
+describe("when oddOrEven1 is called", () => {
+  it("return 'odd' if number is odd", () => {
+    //Arrange
+    const number = 5
+
+    //Act
+    const actualResult = oddOrEven1(number)
+
+    //Assert
+    expect(actualResult).toEqual("odd")
+  })
+
+  it("return 'even' if number is odd", () => {
+    //Arrange
+    const number = 6
+
+    //Act
+    const actualResult = oddOrEven1(number)
+
+    //Assert
+    expect(actualResult).toEqual("even")
+  })
+
+  it("return 'error' if argument is not a number", () => {
+    //Arrange
+    const number = 'string'
+
+    //Act
+    const actualResult = oddOrEven1(number)
+
+    //Assert
+    expect(actualResult).toEqual("error")
+  })
+})
+
+const oddOrEven1 = (number) => {
+  if(typeof number !== 'number'){
+    return 'error'
+  } else {
+    if(number % 2 !== 0) {
+      return "odd"
+    } else if(number % 2 === 0){
+      return "even"
+    } else {
+      return "error"
+    }
+  }
+}
+
 // Write the function that will make the test pass.
 // 10. Write the test for a function called doubler that takes an number and returns the result of the number multiplied by 2.
+
+
 
 // Write the function that will make the test pass.
 // 11. Write the test for a function called multiply that takes two numbers as arguments and logs the result of one of the numbers multiplied by the other.
@@ -319,5 +370,60 @@ const greeter = (name) => {
 
 // Write the function that will make the test pass.
 // 13. Write the test for a function called fizzbuzz. If a number is a multiple of 3, replace it with the word 'fizz'. If a number is a multiple of five, replace it with the word 'buzz'. If a number is a multiple of both 3 and 5, replace it with 'fizzbuzz'.
+
+describe("when fizzbuzz is called",() => {
+  it("return 'fizz' if the number is divisible by 3", () => {
+    //Arrange
+    const number = 3
+
+    //Act
+    const actualResult = fizzbuzz(number)
+
+    //Assert
+    expect(actualResult).toEqual("fizz")
+  })
+  it("return 'buzz' if the number is divisible by 5", () => {
+    //Arrange
+    const number = 5
+
+    //Act
+    const actualResult = fizzbuzz(number)
+
+    //Assert
+    expect(actualResult).toEqual("buzz")
+  })
+  it("return 'fizzbuzz' if the number is divisible by 3 and 5", () => {
+    //Arrange
+    const number = 15
+
+    //Act
+    const actualResult = fizzbuzz(number)
+
+    //Assert
+    expect(actualResult).toEqual("fizzbuzz")
+  })
+  it("return number if the number is not divisible by 3 or 5", () => {
+    //Arrange
+    const number = 4
+
+    //Act
+    const actualResult = fizzbuzz(number)
+
+    //Assert
+    expect(actualResult).toEqual(4)
+  })
+})
+
+const fizzbuzz = (number) => {
+  if(number % 3 === 0 && number % 5 === 0){
+    return 'fizzbuzz'
+  } else if(number % 3 === 0){
+    return 'fizz'
+  } else if(number % 5 === 0){
+    return 'buzz'
+  } else {
+    return number
+  }
+}
 
 // Write the function that will make the test pass.
