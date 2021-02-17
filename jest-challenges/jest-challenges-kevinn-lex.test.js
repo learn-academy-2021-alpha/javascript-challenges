@@ -154,7 +154,7 @@ const compareNum = (numOne,numTwo) => {
 describe("when oddOrEven is called", () => {
   it("return 'odd' if number is odd", () => {
     //Arrange
-    const number = 5 
+    const number = 5
 
     //Act
     const actualResult = oddOrEven(number)
@@ -165,7 +165,7 @@ describe("when oddOrEven is called", () => {
 
   it("return 'even' if number is odd", () => {
     //Arrange
-    const number = 6 
+    const number = 6
 
     //Act
     const actualResult = oddOrEven(number)
@@ -176,7 +176,7 @@ describe("when oddOrEven is called", () => {
 
   it("return 'error' if argument is not a number", () => {
     //Arrange
-    const number = 'string' 
+    const number = 'string'
 
     //Act
     const actualResult = oddOrEven(number)
@@ -258,13 +258,52 @@ const fruitColor = (fruit) => {
   }else {
     return "error"
   }
-} 
+}
 
 // Write the function that will make the test pass.
 // 7. Write the test for a function called rick that returns "Morty".
 
+test("when rick is called, return `Morty`",() => {
+  expect(rick()).toEqual("Morty")
+})
+
+const rick = () =>{
+  return "Morty"
+}
+
 // Write the function that will make the test pass.
 // 8. Write the test for a function called greeter that takes a name as an argument and returns a greeting with that name to the screen.
+
+describe("When greeter is called", () => {
+  it("return `Hi 'name'!`", () => {
+    //Arrange
+    const name = "Lex"
+
+    //Act
+    const actualResult = greeter(name)
+
+    //Assert
+    expect(actualResult).toEqual("Hi Lex!")
+  })
+  it("return `error`", () => {
+    //Arrange
+    const name = 55
+
+    //Act
+    const actualResult = greeter(name)
+
+    //Assert
+    expect(actualResult).toEqual("error")
+  })
+})
+
+const greeter = (name) => {
+  if(typeof name === 'string'){
+  return `Hi ${name}!`
+  } else if(typeof name !== 'string'){
+  return "error"
+  }
+}
 
 // Write the function that will make the test pass.
 // 9. Write the test for a function called oddOrEven that takes an number as an argument and logs whether the number is odd or even.
