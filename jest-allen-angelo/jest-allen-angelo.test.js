@@ -87,32 +87,57 @@
 // }
 
 // 5. Write the test for a function that takes in one argument(number) and returns whether the number is odd.
-describe("returnIfOdd", () => {
+// describe("returnIfOdd", () => {
+//
+//     // a test method, nested within the describe block, that in plain words, describes that the function does.
+//     it("returns'odd' when 1 is passed as an argument", () => {
+//
+//       //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
+//       expect(returnIfOdd(1)).toEqual("odd")
+//     })
+//     // a test method, nested within the describe block, that in plain words, describes that the function does.
+//     it("returns'not odd' when 2 is passed as an argument", () => {
+//
+//         //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
+//         expect(returnIfOdd(2)).toEqual("not odd")
+//       })
+//   })
+//
+// // Write the function that will make the test pass.
+//
+// // Create a function that takes in 1 argument that is a number
+// const returnIfOdd = (num) => {
+//     // Use the modulo to determine if the number is odd or even
+//     if (num % 2 !== 0) {
+//         // Return 'odd' if the result of the modulo is not zero
+//         return 'odd';
+//     } else if (num % 2 === 0) {
+//         // Return 'not odd' if the result of the modulo is zero
+//         return 'not odd';
+//     }
+// }
 
-    // a test method, nested within the describe block, that in plain words, describes that the function does.
-    it("returns'odd' when 1 is passed as an argument", () => {
-  
-      //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
-      expect(returnIfOdd(1)).toEqual("odd")
-    })
-    // a test method, nested within the describe block, that in plain words, describes that the function does.
-    it("returns'not odd' when 2 is passed as an argument", () => {
-  
-        //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
-        expect(returnIfOdd(2)).toEqual("not odd")
-      })
-  })
 
-// Write the function that will make the test pass.
+// Write the test for a function that takes in a fruit and returns "yellow" if the argument is banana, "red" if apple and "purple" if grape.
+test("function that returns 'yellow' if the fruit is a banana", () => {
+  expect(fruitColor("banana")).toEqual("yellow")
+})
+test("function that returns 'red' if an apple", () => {
+  expect(fruitColor("apple")).toEqual("red")
+})
+test("function that returns 'purple' if a grape", () => {
+  expect(fruitColor("grape")).toEqual("purple")
+})
 
-// Create a function that takes in 1 argument that is a number
-const returnIfOdd = (num) => {
-    // Use the modulo to determine if the number is odd or even
-    if (num % 2 !== 0) {
-        // Return 'odd' if the result of the modulo is not zero
-        return 'odd';
-    } else if (num % 2 === 0) {
-        // Return 'not odd' if the result of the modulo is zero
-        return 'not odd';
-    }
+//function that returns color of fruit
+const fruitColor = (fruit) => {
+  if (fruit === "banana"){
+    return "yellow"
+  }
+  else if (fruit === "apple") {
+    return "red"
+  }
+  else if (fruit === "grape") {
+    return "purple"
+  }
 }
