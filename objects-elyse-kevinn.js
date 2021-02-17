@@ -105,24 +105,46 @@
 
 // Consider this variable:
 // let author = {
-//     name: "H. G. Wells",
-//     genre: "science fiction"
-// }
-// Write the code that destructures the author object and makes the following work:
-// console.log(`${name} is a ${genre} author`)
-// --> "H. G. Wells is a science fiction author"
-// Consider this variable:
-// let pokeOne = {
-//     species: "Charmandar",
-//     pokemon_type: "Fire"
+//   name: "H. G. Wells",
+//   genre: "science fiction"
 // }
 
-// let pokeTwo = {
-//     species: "Magikarp",
-//     pokemon_type: "Water"
-// }
+
+// Write the code that destructures the author object and makes the following work:
+
+// let { name, genre } = author
+
+// console.log(`${name} is a ${genre} author`)
+// --> "H. G. Wells is a science fiction author"
+
+// Consider this variable:
+
+let pokeOne = {
+    species: "Charmandar",
+    pokemon_type: "Fire"
+}
+
+let pokeTwo = {
+    species: "Magikarp",
+    pokemon_type: "Water"
+}
+
+
 // Write a function called describePokemon() that take an object like the ones above and uses destructuring to return a description of the Pokemon such that:
-// console.log(describePokemon(pokeOne))
+
+// let { species, pokemon_type } = pokeOne, pokeTwo
+// let { species, pokemon_type } = pokeTwo
+
+// destructure objects to vaiables
+// create a function that takes the objects 
+// string interpilates the species and pokemon type
+
+const describePokemon = (object) => {
+  let { species, pokemon_type } = object
+  return `${species} is a ${pokemon_type} pokemon.`
+}
+
+console.log(describePokemon(pokeOne))
 // --> "Charmandar is a Fire pokemon"
-// console.log(describePokemon(pokeTwo))
+console.log(describePokemon(pokeTwo))
 // --> "Magikarp is a Water pokemon"
