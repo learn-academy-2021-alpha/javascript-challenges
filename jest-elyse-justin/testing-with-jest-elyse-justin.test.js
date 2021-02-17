@@ -48,39 +48,72 @@
 
 // 3. Write the test for a function that returns "in budget" if a price is lower than $300.
 
-test("when inBudget is called with a number that is less than 300", () => {
-  //Arrange
-  const number = i
-  //Act
-  const numResult = i < 300
-  //Assert
-  expect (numResult).toEqual ("in budget")
-})
+// not done !!!
+// test("when inBudget is called with a number that is less than 300", () => {
+//   //Arrange
+//   const number = 300
+//   //Act
+//   const numResult = (number < 300)
+//   //Assert
+//   expect (numResult()).toEqual ("in budget")
+// })
 
 // Write the function that will make the test pass.
 
 
-//
-const inBudget = () => {
-  let number = i
-  if (number < 300) {
-    return "in budget"
-  }
-}
+// //
+// const inBudget = () => {
+//   let number = i
+//   if (number < 300) {
+//     return "in budget"
+//   }
+// }
 
 
 // 4. Write the test for a function that takes in two arguments(numbers) and returns the smaller number.
 
+test ( "when compareNum is called will take num1 and compare to num2", (a,b) => {
+  const greaterValue = (a<b)
+  expect(greaterValue).toEqual(a)
+})
+
 // Write the function that will make the test pass.
+
+var smallNum = 3
+var bigNum = 5
+
+const compareNum = (a,b) =>{
+  if ( smallNum< bigNum){
+    return compareNum
+  }
+}
+
+
 // 5. Write the test for a function that takes in one argument(number) and returns whether the number is odd.
 
 // Write the function that will make the test pass.
 // 6. Write the test for a function that takes in a fruit and returns "yellow" if the argument is banana, "red" if apple and "purple" if grape.
 
-// Write the function that will make the test pass.
+// describe ("when fruitDecider is called", () => {
+//   it ("return 'yellow' if 'banana'", () => {
+//     const fruit = "banana"
+//     const fruitColor = fruitDecider(fruit)
+//     expect(fruitColor).toEqual("yellow")
+//   })
+// })
+
+// // Write the function that will make the test pass.
+// var input = "banana"
+// const fruitDecider = () => {
+//   if (input = "banana")
+//   return "yellow"
+// }
+
 // 7. Write the test for a function called rick that returns "Morty".
 
 // Write the function that will make the test pass.
+
+
 // 8. Write the test for a function called greeter that takes a name as an argument and returns a greeting with that name to the screen.
 
 // Write the function that will make the test pass.
