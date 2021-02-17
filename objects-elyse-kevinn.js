@@ -45,10 +45,36 @@
 //   type: "sandwich",
 //   ingredients: ["bread", "peanut butter", "banana"]
 // }
-// Write the code that accesses the ingredients property.
-// Write the code that access the 3rd ingredient of the lunch object.
-// Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+//
+// // Write the code that accesses the ingredients property.
+// console.log(lunch.ingredients)
+//
+// // Write the code that access the 3rd ingredient of the lunch object.
+// console.log(lunch.ingredients[2]);
+//
+// // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+//
+// //create a function that takes lunch as an arguement
+// //string interpolate name type and ingredients
+// //return ingredients
+//
+// const howTo = (lunch) => {
+//   return `The ingredients for a ${lunch.name} ${lunch.type} are ${lunch.ingredients}.`
+// }
+// console.log(howTo(lunch))
+
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+
+// var lunch = {
+//   name: "PB and Banana",
+//   type: "sandwich",
+//   ingredients: ["bread", "peanut butter", "banana"],
+//   howTo: function() {
+//     return `The ingredients for a ${this.name} ${this.type} are ${this.ingredients}.`
+//   }
+// }
+// console.log(lunch.howTo());
+
 // Consider this variable:
 // var animals = [
 //   { name: "Waffles", type: "dog", age: 12 },
@@ -56,8 +82,27 @@
 //   { name: "Spelunky", type: "dog", age: 4 },
 //   { name: "Hank", type: "cat", age: 11 },
 // ]
-// Create a function that takes in any array of objects and returns a new array with only those of type cat.
-// Using the same array of objects above. Create a function that returns a new array with only the names of the animals.
+//
+// // Create a function that takes in any array of objects and returns a new array with only those of type cat.
+// // Using the same array of objects above. Create a function that returns a new array with only the names of the animals.
+//
+// //create a function that takes an array of objects as an arguement
+// //iterate through all of objects in array
+// //filter out cat objects
+// //return new array of cats
+//
+// const onlyCats = (array) => {
+//   let cats = array.filter(object => {
+//     return object.type === "cat"
+//   })
+//   return cats.map(object => {
+//     return object.name
+//   })
+// }
+//
+// console.log(onlyCats(animals));
+
+
 // Consider this variable:
 // let author = {
 //     name: "H. G. Wells",
