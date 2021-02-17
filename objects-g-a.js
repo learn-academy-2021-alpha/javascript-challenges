@@ -18,8 +18,11 @@ var person = {
         return `${this.firstName} ${this.lastName} is from planet ${this.homePlanet}`
       }
     }
-  
   console.log(person.getData())
-
-  
 // Update the person object with a method that logs "Arthur Dent is from planet Earth".
+
+// Write a function called describeProduct takes product as an argument and logs "The product is a chair. It costs $14.99".
+
+var product = {
+  name:"chair", price: 14.99
+}
