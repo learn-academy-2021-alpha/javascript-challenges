@@ -1,25 +1,37 @@
-// Consider this variable:
-var person = {
-  firstName: "Arthur",
-  lastName: "Dent"
-}
-// Write the code that accesses the first name of the person object.
-console.log(person.firstName);
-// Write the code that accesses the last name of the person object.
-console.log(person.lastName);
-// Write the code that gives the person object a property of homePlanet and set it to 'Earth'.
-person.homePlanet = "Earth"
-console.log(person)
-// Update the person object with a method that logs "Arthur Dent is from planet Earth".
-person.birthPlace = function(){
-    return `${this.firstName} ${this.lastName} is from planet ${this.homePlanet}.`
-}
-console.log(person.birthPlace())
-// Consider this variable:
-// var product = {
-//   name: "chair", price: 14.99
+// // Consider this variable:
+// var person = {
+//   firstName: "Arthur",
+//   lastName: "Dent"
 // }
+// // Write the code that accesses the first name of the person object.
+// console.log(person.firstName);
+// // Write the code that accesses the last name of the person object.
+// console.log(person.lastName);
+// // Write the code that gives the person object a property of homePlanet and set it to 'Earth'.
+// person.homePlanet = "Earth"
+// console.log(person)
+// // Update the person object with a method that logs "Arthur Dent is from planet Earth".
+// person.birthPlace = function(){
+//     return `${this.firstName} ${this.lastName} is from planet ${this.homePlanet}.`
+// }
+// console.log(person.birthPlace())
+
+// Consider this variable:
+var product = {
+  name: "chair", price: 14.99
+}
+var product2 = {
+  name: "table", price: 149.99
+}
 // Write a function called describeProduct takes product as an argument and logs "The product is a chair. It costs $14.99".
+// Create a function that takes in 1 argument that is an object
+const describeProduct = (object) => {
+  // Return a string with 'The product is a [name of product]'
+  return `The product is a ${object.name}`
+}
+// Console.log the result
+console.log(describeProduct(product2));
+
 // Consider this variable:
 // var lunch = {
 //   name: "PB and Banana",
