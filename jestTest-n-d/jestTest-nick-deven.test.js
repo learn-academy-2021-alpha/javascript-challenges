@@ -82,7 +82,7 @@ const areYolResulted = (str) => {
 // Write the function that will make the test pass.
 // 3. Write the test for a function that returns "in budget" if a price is lower than $300.
 
-fdescribe("When inBudget is called", () => {
+describe("When inBudget is called", () => {
     it("return 'in budget' when called with a number less than 300", () => {
         //Arrange 
         const argument = 32;
@@ -121,6 +121,33 @@ const inBudget = (numb) => {
 
 // Write the function that will make the test pass.
 // 4. Write the test for a function that takes in two arguments(numbers) and returns the smaller number.
+describe("When smallNum is called", () => {
+    it("returns the value with the smaller number", () => {
+        //Arrange 
+        const argument1 = 32;
+        const argument2 = 302;
+
+        //Act
+        const actualResult = smallNum (argument1 , argument2 );
+
+        //Assert
+        expect(actualResult).toEqual(32);
+    })
+})
+//write a function called smallNum
+//takes in two number as an argument
+const smallNum = (num1 , num2) => {
+    //if num1 is less than num 2
+    if (num1 < num2){
+        //return num1
+        return num1
+    //Else return num 2
+    }else {
+        return num2
+    }
+}
+
+
 
 // Write the function that will make the test pass.
 // 5. Write the test for a function that takes in one argument(number) and returns whether the number is odd.
@@ -149,4 +176,4 @@ const inBudget = (numb) => {
 // Write the function that will make the test pass.
 // 13. Write the test for a function called fizzbuzz. If a number is a multiple of 3, replace it with the word 'fizz'. If a number is a multiple of five, replace it with the word 'buzz'. If a number is a multiple of both 3 and 5, replace it with 'fizzbuzz'.
 
-// Write the function that will make the test pass.
+// Write the function that will make the test pass
