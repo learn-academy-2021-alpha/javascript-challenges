@@ -55,57 +55,71 @@
 
 
 // Consider this variable:
-var animals = [
-  { name: "Waffles", type: "dog", age: 12 },
-  { name: "Fluffy", type: "cat", age: 14 },
-  { name: "Spelunky", type: "dog", age: 4 },
-  { name: "Hank", type: "cat", age: 11 },
-]
-// Create a function that takes in any array of objects and returns a new array with only those of type cat.
-// Make a function that takes in 1 argument of an array
-const catsOnly = (array) => {
-  // Use filter to create a new array of type 'cats'
-  // Return an array of objects of type cat
-  return array.filter(object => {
-    return object.type === 'cat'
-  })
-}
+// var animals = [
+//   { name: "Waffles", type: "dog", age: 12 },
+//   { name: "Fluffy", type: "cat", age: 14 },
+//   { name: "Spelunky", type: "dog", age: 4 },
+//   { name: "Hank", type: "cat", age: 11 },
+// ]
+// // Create a function that takes in any array of objects and returns a new array with only those of type cat.
+// // Make a function that takes in 1 argument of an array
+// const catsOnly = (array) => {
+//   // Use filter to create a new array of type 'cats'
+//   // Return an array of objects of type cat
+//   return array.filter(object => {
+//     return object.type === 'cat'
+//   })
+// }
 
-// Console log the result
-// console.log(catsOnly(animals))
+// // Console log the result
+// // console.log(catsOnly(animals))
 
-// Using the same array of objects above. Create a function that returns a new array with only the names of the animals.
+// // Using the same array of objects above. Create a function that returns a new array with only the names of the animals.
 
-// Create a function that takes in 1 argument which is an array
-const animalNames = (array) => {
-  // Return an array of names
-  // The new array is the same length as the input array
-  return array.map(object => {
-    return object.name
-  })
-}
-console.log(animalNames(animals))
+// // Create a function that takes in 1 argument which is an array
+// const animalNames = (array) => {
+//   // Return an array of names
+//   // The new array is the same length as the input array
+//   return array.map(object => {
+//     return object.name
+//   })
+// }
+// console.log(animalNames(animals))
 
 // Consider this variable:
-// let author = {
-//     name: "H. G. Wells",
-//     genre: "science fiction"
-// }
+let author = {
+    name: "H. G. Wells",
+    genre: "science fiction"
+}
 // Write the code that destructures the author object and makes the following work:
-// console.log(`${name} is a ${genre} author`)
-// --> "H. G. Wells is a science fiction author"
-// Consider this variable:
-// let pokeOne = {
-//     species: "Charmandar",
-//     pokemon_type: "Fire"
-// }
 
-// let pokeTwo = {
-//     species: "Magikarp",
-//     pokemon_type: "Water"
-// }
+let {name, genre} = author
+console.log(`${name} is a ${genre} author`)
+
+// --> "H. G. Wells is a science fiction author"
+
+// Consider this variable:
+let pokeOne = {
+    species: "Charmandar",
+    pokemon_type: "Fire"
+}
+
+let pokeTwo = {
+    species: "Magikarp",
+    pokemon_type: "Water"
+}
 // Write a function called describePokemon() that take an object like the ones above and uses destructuring to return a description of the Pokemon such that:
-// console.log(describePokemon(pokeOne))
+
+//write function takes in one argument that is an object
+const describePokemon = (object) => {
+  let {species, pokemon_type} = object
+    return `${species} is a ${pokemon_type} pokemon`
+}
+
+//destructure the object
+//return a string 
+
+console.log(describePokemon(pokeOne))
 // --> "Charmandar is a Fire pokemon"
-// console.log(describePokemon(pokeTwo))
+console.log(describePokemon(pokeTwo))
 // --> "Magikarp is a Water pokemon"
