@@ -1,7 +1,7 @@
 // // 1. Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired.
 
-// const { expect } = require("@jest/globals")
-// const { describe } = require("yargs")
+// const { test, expect } = require("@jest/globals");
+// const { describe } = require("yargs");
 
 // test("function returns 'drink coffee' if you are tired", () => {
 //     expect(areYouTired("yes")).toEqual("drink coffee")
@@ -118,26 +118,55 @@
 // }
 
 
-// Write the test for a function that takes in a fruit and returns "yellow" if the argument is banana, "red" if apple and "purple" if grape.
-test("function that returns 'yellow' if the fruit is a banana", () => {
-  expect(fruitColor("banana")).toEqual("yellow")
-})
-test("function that returns 'red' if an apple", () => {
-  expect(fruitColor("apple")).toEqual("red")
-})
-test("function that returns 'purple' if a grape", () => {
-  expect(fruitColor("grape")).toEqual("purple")
+// // Write the test for a function that takes in a fruit and returns "yellow" if the argument is banana, "red" if apple and "purple" if grape.
+// test("function that returns 'yellow' if the fruit is a banana", () => {
+//   expect(fruitColor("banana")).toEqual("yellow")
+// })
+// test("function that returns 'red' if an apple", () => {
+//   expect(fruitColor("apple")).toEqual("red")
+// })
+// test("function that returns 'purple' if a grape", () => {
+//   expect(fruitColor("grape")).toEqual("purple")
+// })
+
+// //function that returns color of fruit
+// const fruitColor = (fruit) => {
+//   if (fruit === "banana"){
+//     return "yellow"
+//   }
+//   else if (fruit === "apple") {
+//     return "red"
+//   }
+//   else if (fruit === "grape") {
+//     return "purple"
+//   }
+// }
+
+
+// 7. Write the test for a function called rick that returns "Morty".
+describe("rick", () => {
+    test("returns 'Morty'", () => {
+        expect(rick()).toEqual("Morty")
+    })
 })
 
-//function that returns color of fruit
-const fruitColor = (fruit) => {
-  if (fruit === "banana"){
-    return "yellow"
-  }
-  else if (fruit === "apple") {
-    return "red"
-  }
-  else if (fruit === "grape") {
-    return "purple"
-  }
+// Write the function that will make the test pass.
+
+// Create a function that takes in no arguments
+const rick = () => {
+    // Return a string of 'Morty
+    return 'Morty';
+}
+
+// 8. Write the test for a function called greeter that takes a name as an argument and returns a greeting with that name to the screen.
+describe("greeter", () => {
+    test("returns greeting with that name to the screen", () => {
+        expect(greeter('Allen')).toEqual('Hi Allen')
+    })
+})
+
+// Write the function that will make the test pass.
+// Create a function that takes in 1 argument that is a name
+const greeter = (names) => {
+    return `Hi ${names}`
 }
