@@ -32,35 +32,60 @@
 // // Console.log the result
 // console.log(describeProduct(product2));
 
-// Consider this variable:
-var lunch = {
-  name: "PB and Banana",
-  type: "sandwich",
-  ingredients: ["bread", "peanut butter", "banana"]
-}
-// Write the code that accesses the ingredients property.
-console.log(lunch.ingredients)
-// Write the code that access the 3rd ingredient of the lunch object.
-console.log(lunch.ingredients[2])
-// Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+// // Consider this variable:
+// var lunch = {
+//   name: "PB and Banana",
+//   type: "sandwich",
+//   ingredients: ["bread", "peanut butter", "banana"]
+// }
+// // Write the code that accesses the ingredients property.
+// console.log(lunch.ingredients)
+// // Write the code that access the 3rd ingredient of the lunch object.
+// console.log(lunch.ingredients[2])
+// // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 
-//write a function that takes in an object at an argument
-const instructions = (object) => {
-  //return a string
-  return `The ingredients for a ${object.name} and ${object.type} are ${object.ingredients[0]}, ${object.ingredients[1]}, and ${object.ingredients[2]}.`
-}
-console.log(instructions(lunch));
+// //write a function that takes in an object at an argument
+// const instructions = (object) => {
+//   //return a string
+//   return `The ingredients for a ${object.name} and ${object.type} are ${object.ingredients[0]}, ${object.ingredients[1]}, and ${object.ingredients[2]}.`
+// }
+// console.log(instructions(lunch));
 
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+
+
 // Consider this variable:
-// var animals = [
-//   { name: "Waffles", type: "dog", age: 12 },
-//   { name: "Fluffy", type: "cat", age: 14 },
-//   { name: "Spelunky", type: "dog", age: 4 },
-//   { name: "Hank", type: "cat", age: 11 },
-// ]
+var animals = [
+  { name: "Waffles", type: "dog", age: 12 },
+  { name: "Fluffy", type: "cat", age: 14 },
+  { name: "Spelunky", type: "dog", age: 4 },
+  { name: "Hank", type: "cat", age: 11 },
+]
 // Create a function that takes in any array of objects and returns a new array with only those of type cat.
+// Make a function that takes in 1 argument of an array
+const catsOnly = (array) => {
+  // Use filter to create a new array of type 'cats'
+  // Return an array of objects of type cat
+  return array.filter(object => {
+    return object.type === 'cat'
+  })
+}
+
+// Console log the result
+// console.log(catsOnly(animals))
+
 // Using the same array of objects above. Create a function that returns a new array with only the names of the animals.
+
+// Create a function that takes in 1 argument which is an array
+const animalNames = (array) => {
+  // Return an array of names
+  // The new array is the same length as the input array
+  return array.map(object => {
+    return object.name
+  })
+}
+console.log(animalNames(animals))
+
 // Consider this variable:
 // let author = {
 //     name: "H. G. Wells",
