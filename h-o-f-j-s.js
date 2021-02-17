@@ -37,3 +37,16 @@ const letters = (array) => {
 }
 console.log(letters(comboArr))
 
+
+/ STRETCH Challenges
+// Create a function that takes in a string and returns a new string with all the vowels removed.
+ var str = “javascript is awesome”
+ // var str convert to array filter array convert new array to string
+var newArray = str.split(“”)
+// const onlyVowel = (string) => {
+//     return string.filter(value => {
+//         var vowels = [“a”,“e”,“i”,“o”,“u”]
+//         (value !== vowels)
+//     })
+// }
+// console.log(str)
