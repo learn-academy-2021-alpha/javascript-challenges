@@ -125,20 +125,45 @@ let pokeTwo = {
 }
 
 // Write a function called describePokemon() that take an object like the ones above and uses destructuring to return a description of the Pokemon such that:
-let pokemon = [pokeOne,pokeTwo]
-// let {species, pokemon_type} = pokeOne
-// let {species, pokemon_type} = pokeTwo
 
-const describePokemon = (array) => {
-  return array.filter(object =>{
-    return `${pokemon.species} is a ${pokemon.pokemon_type} pokemon`
-  })
+ let pokemon = [pokeOne,pokeTwo]
+ console.log(pokemon);
+// let {species, pokemon_type} = pokeTwo
+//
+// const describePokemon = (object) => {
+// //  if(object.species === "Charmandar"){
+//     let {species, pokemon_type} = pokeOne
+//     return `${species} is a ${pokemon_type} pokemon`
+// //  } else if(object.species === "Charmandar"){
+//     let {species2, pokemon_type2} = pokeTwo
+//     return `${species} is a ${pokemon_type} pokemon`
+//   }
+//
+//   }
+//   //
+//   // const describePokemon2 = (object) => {
+//   //   let {species, pokemon_type} = pokeTwo
+//   //     return `${species} is a ${pokemon_type} pokemon`
+//   //   }
+//
+
+
+let char = pokemon[0]
+console.log(char);
+let magi = pokemon[1]
+console.log(magi);
+
+const describePokemon = (object) => {
+
 }
 
-console.log(describePokemon(pokemon));
+
 // console.log(describePokemon(pokeOne))
 // // --> "Charmandar is a Fire pokemon"
-//console.log(describePokemon(pokeTwo))
-//--> "Magikarp is a Water pokemon"
+// console.log(describePokemon(pokeTwo))
+// //--> "Magikarp is a Water pokemon"
 
-console.log(pokemon);
+
+
+
+//
